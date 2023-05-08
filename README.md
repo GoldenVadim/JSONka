@@ -1,5 +1,5 @@
-# JSONka
-<h2>The JSON parser written in Python.</h2>
+<h1 align="center">JSONka</h1>
+<b>The JSON parser written in Python.</b>
 <h2>Sections</h2>
 <ul></ul>
 <h2>Installation guide</h2>
