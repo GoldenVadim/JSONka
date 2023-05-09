@@ -1,6 +1,7 @@
 class InvalidValue():
     def __init__(self,*args:object) -> None:"""The exception."""
 def __convert_value__(value):
+    if value is str:return value
     if value==None:return'null'
     if value==True:return'true'
     elif value==False:return'false'
@@ -31,7 +32,7 @@ A JSON object.
         self.parsed=dict(self.parsed)
         return self.parsed
     def to_bytes(self,encoding='UTF-8')->bytes:
-        '''Returns a converted to JSON object bytes.'''
+        '''Returns a converted to bytes JSON object.'''
         return bytes(f'{self.parsed}',encoding)
     def save_to_file(self,path:str):
         '''Writes JSON to file.'''
